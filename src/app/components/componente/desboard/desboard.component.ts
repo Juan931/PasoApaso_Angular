@@ -9,9 +9,12 @@ import { Component } from "@angular/core";
 //interpolacion: desde el archivo ts es donde vamos a enviar las variables a nuestro componente html
 export class DesboarComponent {
     nombre: string;
-
+    img: string;
+    texto: string;
     constructor(){
         this.nombre= "Juan Medina"; //aca estamos creando nuestra variable despues vamos al html del componente
+        this.img="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Vaporwave-4K-Wallpapers.jpg/800px-Vaporwave-4K-Wallpapers.jpg"
+        this.texto="Escribe aqui"; //esto es porperting binding
     }
     getName():string{
         return this.nombre=" juan medina 2"
