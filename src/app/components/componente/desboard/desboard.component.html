@@ -13,5 +13,13 @@
 <img [src]="img">
 <br>
 <br>
-<!--Esto es properting binding-->
-<input type="text" [placeholder]="texto">
+
+<div>
+    <h1>{{title}}</h1>
+    <!--Esto es properting binding-->
+    <input type="text" [placeholder]="texto">
+    <button (click)="cambiarNombre() "> Clicl me! <!--al dar clir cambiara el nombre, esto es eventbindig-->
+
+    </button>
+
+</div>
