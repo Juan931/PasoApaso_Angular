@@ -23,3 +23,14 @@
     </button>
 
 </div>
+
+
+<h1>Comunicacion output hijo a padre</h1>
+
+<h2>{{texto3}}</h2>
+<!--<app-card [textCard]="texto2  ></app-card> Este es el que envia el padre -->
+<app-card (nuevoEvento)="cambiarTexto($event)"></app-card>
+<!--al dar click nos cambiara a este es el nuevo texto-->
+<!--por medio del input comunicamos del padre al hijo  padre e hijo @input-->
+<!--aca estamos haciendo la comunicacion de componente hijo a padre, por medio de  propertybinding -->
+<!--Este es el compenente hijo-->
